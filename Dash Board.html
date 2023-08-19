@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-[100%] bg-gray-200 pb-10">
+      <div class="bg-[#7749F8] text-white">
+        <div class="px-28 flex justify-between py-4">
+          <h4 class="font-bold">Personal Bloging App</h4>
+          <div class="flex gap-10">
+            <p class="text-sm">Muhammad Sahib</p>
+            <p class="font-bold"><a href="signin.html">Log out</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white py-3">
+        <h3 class="px-28 py-4 font-bold text-lg">Dashboard</h3>
+      </div>
+
+      <div class="border-1 border-sky-300 px-28 my-5">
+        <div class="bg-white rounded p-7" style="border-radius: 10px">
+          <div class="flex flex-col items-center">
+            <input
+              type="text"
+              placeholder="Title..."
+              class="px-3 py-2 border border-black w-[90%] rounded"
+              id="title"
+            />
+            <textarea
+              name=""
+              id="descrp"
+              cols="70"
+              rows="5"
+              placeholder="Discription......"
+              class="border border-black rounded w-[90%] my-4 py-2 px-3"
+            ></textarea>
+          </div>
+          <button
+            id="publish"
+            class="bg-[#7749F8] text-white py-2 px-7 rounded w-52 ml-14"
+          >
+            Publish Blogs
+          </button>
+        </div>
+      </div>
+      <h3 class="px-28 mb-2 font-bold text-lg">My Blogs</h3>
+      <div class="border-1 border-sky-300 px-28">
+        <div class="bg-white rounded p-10" style="border-radius: 10px">
+          <div class="flex gap-4">
+            <div>
+              <img
+                src="Profile.jpg"
+                alt=""
+                class="w-20 h-20 rounded-lg"
+                style="border-radius: 25px"
+              />
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">An Action Button Could Be</h3>
+              <h3 class="font-bold text-lg">Coming to the iPhone 15</h3>
+              <p class="pt-2 text-sm">Muhammad Sahib - August 16th, 2023</p>
+            </div>
+          </div>
+          <div class="py-5">
+            <p class="text-sm " id="pera">
+              An Action Button Could Be Coming to the iPhone 15 Inzamam Malik -
+              August 16th, 2023 Apple could be putting an Action button on your
+              next iPhone. According to a July report from MacRumors, code in
+              the fourth iOS 17 developer beta hints at functionality for an
+              Action button on the next-gen iPhone 15 Pro and Pro Max models. An
+              Action Button Could Be Coming to the iPhone 15 Inzamam Malik -
+              August 16th, 2023
+            </p>
+            <p class="text-sm pt-2">
+              An Action Button Could Be Coming to the iPhone 15 Inzamam Malik -
+              August 16th, 2023 Apple could be putting an Action button on your
+              next iPhone. According to a July report from MacRumors, code in
+              the fourth iOS 17 developer beta hints at functionality for an
+              Action button on the next-gen iPhone 15 Pro and Pro Max models. An
+              Action Button Could Be Coming to the iPhone 15 Muhammad Sahib -
+              August 19th, 2023
+            </p>
+          </div>
+          <div>
+            <button class="text-sky-600">
+              <a href="profile.html">Edit</a>
+            </button>
+            <button id="dlete" class="text-sky-600 ml-5">Delete</button>
+          </div>
+        </div>
+      </div>
+      <div class="border-1 border-sky-300 px-28 mt-7 mb-10">
+        <div class="bg-white rounded p-10" style="border-radius: 10px">
+          <div class="flex gap-4">
+            <div>
+              <img
+                src="Profile.jpg"
+                alt=""
+                class="w-20 h-20 rounded-lg"
+                style="border-radius: 25px"
+              />
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">An Action Button Could Be</h3>
+              <h3 class="font-bold text-lg">Coming to the iPhone 15</h3>
+              <p class="pt-2 text-sm">Inzamam Malik - August 16th, 2023</p>
+            </div>
+          </div>
+          <div class="py-5">
+            <p class="text-sm">
+              An Action Button Could Be Coming to the iPhone 15 Inzamam Malik -
+              August 16th, 2023 Apple could be putting an Action button on your
+              next iPhone. According to a July report from MacRumors, code in
+              the fourth iOS 17 developer beta hints at functionality for an
+              Action button on the next-gen iPhone 15 Pro and Pro Max models. An
+              Action Button Could Be Coming to the iPhone 15 Inzamam Malik -
+              August 16th, 2023
+            </p>
+            <p class="text-sm pt-2">
+              Apple introduced the Action button on the Apple Watch Ultra. It's
+              a physical button on the side of the Apple Watch Ultra that allows
+              you to run a preselected function or program when you press it
+              without unlocking your device or navigating to an app. Some of the
+              preselected functions include starting a stopwatch, beginning a
+              workout and turning on your flashlight. Delete Edit An Action
+              Button Could Be Coming to the iPhone 15 Inzamam Malik - August
+              16th, 2023 .
+            </p>
+          </div>
+          <div>
+            <button class="text-sky-600">
+              <a href="/profile.html">Edit</a>
+            </button>
+            <button id="dlete" class="text-sky-600 ml-5">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-database.js"></script> <!-- Include the database script -->
+
+<script type="module">
+
+  
+  // Initialize Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyAPLdEnDau3y5pVQHCKN6vvu6LPKfeyJ8o",
+    authDomain: "mini-hackathon-task.firebaseapp.com",
+    databaseURL: "https://mini-hackathon-task-default-rtdb.firebaseio.com",
+    projectId: "mini-hackathon-task",
+    storageBucket: "mini-hackathon-task.appspot.com",
+    messagingSenderId: "891454075592",
+    appId: "1:891454075592:web:ea14932edee73a4355abfd",
+    measurementId: "G-Y5V4N21BR1"
+      };
+  firebase.initializeApp(firebaseConfig);
+
+  // Initialize Firebase Realtime Database
+  const database = firebase.database();
+
+
+      var rollV, nameV, genV, addV;
+      const currentDate = new Date();
+const ctime= currentDate.toLocaleTimeString();
+
+      const readfile = () => {
+        rollV = document.getElementById("title").value;
+        nameV = document.getElementById("descrp").value;
+      };
+      let publish= document.getElementById("publish")
+      publish.addEventListener('click', () => {
+        readfile();
+        firebase
+          .database()
+          .ref("student/" + rollV)
+          .set({
+            name: nameV,
+            title: rollV,
+            time: ctime
+          });
+        document.getElementById("title").value = "";
+        document.getElementById("descrp").value = "";
+        console.log("Data Inserted");
+        alert("Data Inserted");
+
+        firebase
+    .database()
+    .ref("student/" + rollV)
+    .on("value", function (snapshot) {
+     let data= document.getElementById("title").innerText = snapshot.val().title;
+     console.log(data)
+      document.getElementById("pera").innerText  = snapshot.val().name;
+    });
+
+
+  let dlete= document.getElementById("dlete")
+  dlete.addEventListener("click", ()=>{
+    alert("Comming soon")
+  })
+      });
+    </script>
+  </body>
+</html>

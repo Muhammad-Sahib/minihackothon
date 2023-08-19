@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="w-[100%] bg-gray-200 pb-10">
+      <div class="bg-[#7749F8] text-white">
+        <div class="px-28 flex justify-between py-4">
+          <h4 class="font-bold">Personal Bloging App</h4>
+          <div class="flex gap-10">
+            <p class="text-sm">Muhammad Sahib</p>
+            <p class="font-bold"><a href="signin.html">Log out</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white py-3">
+        <h3 class="px-28 py-4 font-bold text-lg">Profile</h3>
+      </div>
+
+      <div class="border-1 border-sky-300 px-28 my-5">
+        <div class="bg-white rounded p-7" style="border-radius: 10px">
+          <div class="flex flex-col gap-4">
+            <div>
+              <img
+                src="Profile.jpg"
+                alt=""
+                class="w-52 h-52 rounded-lg"
+                style="border-radius: 25px"
+              />
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">Muhammad Sahib</h3>
+              <h3 class="font-bold text-lg">Password</h3>
+              <div class="flex flex-col gap-3">
+                <input
+                  id="sfname"
+                  type="password"
+                  placeholder="Old password"
+                  class="w-[20%] py-3 px-2 border-2 h-8"
+                  style="border-radius: 7px"
+                />
+
+                <input
+                  id="slname"
+                  type="password"
+                  placeholder="New password"
+                  class="w-[20%] py-3 px-2 border-2 h-8"
+                  style="border-radius: 7px"
+                />
+                <input
+                  id="semail"
+                  type="password"
+                  placeholder="Repeat password "
+                  class="w-[20%] py-3 px-2 border-2 h-8"
+                  style="border-radius: 7px"
+                />
+                <button onclick='uddate()' id="update"  class="bg-[#7749F8] text-white py-2 px-5 rounded w-52">
+                   Update profile
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        const update =document.getElementById("update")
+        update.addEventListener("click",()=>{
+            alert("commming sooon")
+        })
+    </script>
+  </body>
+</html>
